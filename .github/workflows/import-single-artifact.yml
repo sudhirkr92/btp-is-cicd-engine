@@ -45,7 +45,7 @@ jobs:
 
       - name: Request OAuth Token for BTP API
         id: get-token
-        uses: ./.github/actions/get-token
+        uses: sudhirkr92/btp-is-cicd-engine/.github/actions/get-token@main
         with:
           btp-api-user: ${{ vars.BTP_API_USER }}
           btp-token-url: ${{ vars.BTP_TOKEN_URL }}
